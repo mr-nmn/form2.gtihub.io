@@ -43,82 +43,50 @@
 #btn {
     width: 80px;
 }
-#myBtn {
+
+.mybtn {
+    width: 80px;
     display: none;
     position: fixed;
-    bottom: 5px;
-    right: 5px;
     z-index: 99;
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: #F79239;
+    background-color: #9f9f9c;
     color: white;
     cursor: pointer;
     padding: 15px;
-    border-radius: 4px;
+    border-radius: 50px;
 }
+
+#myBtn1 {
+    bottom: 5px;
+    right: 5px;
+}
+
 #myBtn2 {
-    display: none;
-    position: fixed;
     bottom: 5px;
     left: 5px;
-    z-index: 99;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    width: 80px;
-    background-color: #F79239;
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 4px;
 }
+
 #myBtn3 {
-    display: none;
-    position: fixed;
     top: 5px;
     left: 5px;
-    z-index: 99;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    width: 80px;
-    background-color: #F79239;
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 4px;
 }
+
 #myBtn4 {
-    display: none;
-    position: fixed;
     top: 5px;
     right: 5px;
-    z-index: 99;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    width: 80px;
-    background-color: #F79239;
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 4px;
 }
+
 #myBtn5 {
-    display: none;
-    position: fixed;
     top: 5px;
     right: 48%;
-    z-index: 99;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    width: 80px;
-    background-color: #F79239;
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 4px;
+}
+
+@media (max-width: 540px) {
+    #myBtn5 {
+        top: 5px;
+        right: 43%;
+    }
 }

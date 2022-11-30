@@ -13,17 +13,17 @@
 
 <body id="bdy">
     <!-- button -->
-    <button id="myBtn" onmouseover="fn3()" style="display: block;">Hover</button>
+    <button id="myBtn1" class="mybtn" onmouseover="fn3()" style="display: block;">Hover</button>
 
-    <button id="myBtn3" onblur="fn5()" style="display: block;">Blur</button>
+    <button id="myBtn3" class="mybtn" onblur="fn5()" style="display: block;">Blur</button>
 
-    <button id="myBtn2" onfocus="fn4()" style="display: block;">Focus</button>
+    <button id="myBtn2" class="mybtn" onfocus="fn4()" style="display: block;">Focus</button>
 
-    <button id="myBtn4" onmouseout="fn6()" style="display: block;">Out</button>
+    <button id="myBtn4" class="mybtn" onmouseout="fn6()" style="display: block;">Out</button>
     <!-- button -->
 
     <!-- hide show -->
-    <button id="myBtn5" onclick="fn7()" style="display: block;">Hide</button>
+    <button id="myBtn5" class="mybtn" onclick="fn7()" style="display: block;">Hide</button>
     <!-- hide show -->
 
     <!-- form -->
@@ -40,11 +40,11 @@
                 <input type="password" class="form-control" id="pass">
             </div>
 
-            Male <input class="form-check-input" type="radio" name="gender" value="Male" id="">&nbsp;
-            Female <input class="form-check-input" type="radio" name="gender" value="Female" id=""><br><br>
+            Male <input class="form-check-input" type="radio" name="gender" value="Male">&nbsp;
+            Female <input class="form-check-input" type="radio" name="gender" value="Female"><br><br>
 
-            English <input class="form-check-input" type="checkbox" name="language" id="">&nbsp;
-            Hindi <input class="form-check-input" type="checkbox" name="language" id=""><br><br>
+            English <input class="form-check-input" type="checkbox" name="language">&nbsp;
+            Hindi <input class="form-check-input" type="checkbox" name="language"><br><br>
 
             <select class="form-select" id="Select" aria-label="Default select example">
                 <option selected>Select your city</option>
@@ -79,14 +79,14 @@
         function fn() {
             document.getElementById("hid").style.display = "block";
             document.getElementById("hid").style.display = "flex";
-            document.getElementById("hid").justifyContent = "center";
+            document.getElementById("hid").style.justifyContent = "center";
 
-            var nm1 = document.getElementById("pass").value;
+            var pas = document.getElementById("pass").value;
             var eml = document.getElementById("email").value;
             var cty = document.getElementById("Select").value;
             var cmt = document.getElementById("comt").value;
 
-            document.getElementById("result").innerHTML = "Email - " + eml + "<br>" + "Password - " + nm1 + "<br>" + "City - " + cty + "<br>" + "Comment - " + cmt;
+            document.getElementById("result").innerHTML = "Email - " + eml + "<br>" + "Password - " + pas + "<br>" + "City - " + cty + "<br>" + "Comment - " + cmt;
         }
         // form
 
